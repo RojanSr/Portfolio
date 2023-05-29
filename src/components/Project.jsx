@@ -13,9 +13,27 @@ const Project = () => {
           liveLink="https://rojansr.github.io/Odin-library/"
           description="Fill out some of your favourite books. A library project inspired by The Odin Project Frontend Career path challenge. I have added some of my own changes"
         />
-        <ProjectCard title="" imageClass="weather-cover" />
-        <ProjectCard title="" imageClass="meme-cover" />
-        <ProjectCard title="" imageClass="rating-cover" />
+        <ProjectCard
+          title="Weather App"
+          imageClass="weather-cover"
+          githubLink="https://github.com/RojanSr/React-weather-app"
+          liveLink="https://rojansr.github.io/React-weather-app/"
+          description="Check out weather from all around the world."
+        />
+        <ProjectCard
+          title="Meme Generator"
+          imageClass="meme-cover"
+          githubLink="https://github.com/RojanSr/Meme-generator"
+          liveLink="https://sprightly-sherbet-934649.netlify.app/"
+          description="As a meme enthusiast, this project was delight to work with. It was insipired by the React course on Scrimba."
+        />
+        <ProjectCard
+          title="Interactive rating"
+          imageClass="rating-cover"
+          githubLink="https://github.com/RojanSr/interactive-rating-component-main"
+          liveLink="https://rojansr.github.io/interactive-rating-component-main/"
+          description="A user rating website which records the rating provided in local storage for further use."
+        />
       </div>
     </div>
   );

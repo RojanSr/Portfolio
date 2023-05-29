@@ -367,6 +367,27 @@ nav {
   background-size: cover;
 }
 
+.weather-cover {
+  background-image: url(./assets/project-card/weather.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meme-cover {
+  background-image: url(./assets/project-card/meme.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rating-cover {
+  background-image: url(./assets/project-card/rating.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Contact section */
 
 .contact-main {
