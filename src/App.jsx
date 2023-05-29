@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Skills from "./components/Skills";
 
 function App() {
   const [dark, setDark] = React.useState(false);
@@ -11,7 +13,10 @@ function App() {
   return (
     <div className={dark ? "container dark" : "container"}>
       <Navbar onModeClick={changeMode} />
-      <main></main>
+      <main>
+        <Home />
+        <Skills />
+      </main>
     </div>
   );
 }

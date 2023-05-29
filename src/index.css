@@ -2,9 +2,11 @@
 
 :root {
   --primary-bg-clr: #ffffff;
-  --primary-text-clr: #1c1b1b;
+  --primary-text-clr: #1c1b1be4;
 
   --secondary-text-clr: #707070;
+
+  --primary-hover-txt: #f48225;
 
   --padding: 0px 80px;
 }
@@ -37,8 +39,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 10vh;
   padding: var(--padding);
+  box-shadow: 2px -1px 3px rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  background-color: inherit;
+  z-index: 99;
 }
 
 .nav--items {
@@ -47,6 +54,32 @@ nav {
   align-items: center;
   gap: 30px;
   font-size: 18px;
+}
+
+.nav--item {
+  transition: 0.15s ease-in;
+  position: relative;
+}
+
+.nav--item:hover {
+  color: var(--primary-hover-txt);
+  transform: scale(0.97);
+}
+
+.nav--item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  left: 0;
+  transition: 0.2s ease-in;
+  height: 2px;
+  width: 0%;
+}
+
+.nav--item:hover::after {
+  width: 100%;
+  background-color: var(--primary-hover-txt);
 }
 
 .nav--header {
@@ -71,4 +104,166 @@ nav {
 .toggle-mode:hover {
   background-color: var(--primary-bg-clr);
   color: var(--primary-text-clr);
+}
+
+/* main {
+  height: 90vh;
+  background-color: grey;
+} */
+
+.dev-illustration {
+  width: 500px;
+  height: 400px;
+  background-image: url(./assets/stars.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-10deg);
+  animation: 1s svg;
+  margin-top: 100px;
+}
+
+/* page load animation */
+
+@keyframes svg {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes introduction {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro-div {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.introduction {
+  width: 40vw;
+  padding: 40px 10px;
+  animation: 1.5s introduction;
+  margin-top: 100px;
+}
+
+.highlight-text {
+  color: var(--primary-hover-txt);
+  font-style: italic;
+}
+
+.hire-btn {
+  background: none;
+  border: 2px solid var(--primary-hover-txt);
+  color: var(--primary-hover-txt);
+  padding: 8px 20px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  transition: 0.08s ease-in;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hire-btn > span {
+  font-size: 14px;
+  z-index: 10;
+}
+
+.hire-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--primary-hover-txt);
+  transition: 0.4s ease-in;
+  z-index: -1;
+}
+
+.hire-btn:hover {
+  color: var(--primary-bg-clr);
+}
+
+.hire-btn:hover::after {
+  width: 100%;
+}
+
+/* Skills section */
+
+.skill-title {
+  font-size: 2rem;
+  padding: 30px 0px;
+}
+
+.skills-div {
+  text-align: center;
+  height: 40vh;
+  background-color: var(--primary-text-clr);
+  color: var(--primary-bg-clr);
+}
+
+.skill-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  text-align: center;
+}
+
+.skill-box {
+  min-height: 80px;
+  min-width: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.skill-box > span {
+  position: absolute;
+  bottom: -15px;
+  transform: translate(-50%, 50%);
+  font-style: italic;
+}
+
+.react {
+  background-image: url(./assets/skills/react.svg);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.git {
+  background-image: url(./assets/skills/git.svg);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.js {
+  background-image: url(./assets/skills/js.svg);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.html {
+  background-image: url(./assets/skills/html.svg);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.css {
+  background-image: url(./assets/skills/css.svg);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
 }

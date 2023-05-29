@@ -11,16 +11,16 @@ export default function Navbar(props) {
         <div className="toggle-mode" onClick={props.onModeClick}>
           <i className="fa-regular fa-moon"></i>
         </div>
-        <li>
-          <a href="#">Home</a>
+        <li className="nav--item">
+          <a href="#home-section">Home</a>
         </li>
-        <li>
-          <a href="#">About me</a>
+        <li className="nav--item">
+          <a href="#skills-section">Skills</a>
         </li>
-        <li>
+        <li className="nav--item">
           <a href="#">Projects</a>{" "}
         </li>
-        <li>
+        <li className="nav--item">
           <a href="#">Contact</a>
         </li>
       </ul>
