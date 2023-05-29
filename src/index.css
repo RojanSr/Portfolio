@@ -4,9 +4,10 @@
   --primary-bg-clr: #ffffff;
   --primary-text-clr: #1c1b1be4;
 
-  --secondary-text-clr: #707070;
+  --secondary-text-clr: #d4d0d0;
 
-  --primary-hover-txt: #f48225;
+  /* --primary-hover-txt: #ef8025; */
+  --primary-hover-txt: #ff6666;
 
   --padding: 0px 80px;
 }
@@ -46,6 +47,7 @@ nav {
   width: 100%;
   background-color: inherit;
   z-index: 99;
+  backdrop-filter: blur(5px);
 }
 
 .nav--items {
@@ -152,22 +154,22 @@ nav {
 
 .introduction {
   width: 40vw;
-  padding: 40px 10px;
   animation: 1.5s introduction;
-  margin-top: 100px;
+  margin-top: 200px;
+}
+
+.introduction > p {
+  margin-bottom: 20px;
 }
 
 .highlight-text {
   color: var(--primary-hover-txt);
-  font-style: italic;
 }
 
 .hire-btn {
-  background: none;
   border: 2px solid var(--primary-hover-txt);
   color: var(--primary-hover-txt);
-  padding: 8px 20px;
-  margin-top: 20px;
+  padding: 2px 20px;
   position: relative;
   z-index: 1;
   transition: 0.08s ease-in;
@@ -204,18 +206,19 @@ nav {
 
 .skill-title {
   font-size: 2rem;
-  padding: 30px 0px;
+  padding-bottom: 20px;
 }
 
 .skills-div {
   text-align: center;
-  height: 40vh;
   background-color: var(--primary-text-clr);
   color: var(--primary-bg-clr);
+  padding: 10vh 0px;
 }
 
 .skill-grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 60px;
   text-align: center;
@@ -227,6 +230,12 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
   position: relative;
+  border-radius: 12px;
+  transition: 0.1s ease-in;
+}
+
+.skill-box:hover {
+  transform: scale(1.1);
 }
 
 .skill-box > span {
@@ -266,4 +275,169 @@ nav {
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
+}
+
+.project-main {
+  padding-top: 10vh;
+}
+
+.project--title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.project--container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 400px;
+  position: relative;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  filter: brightness(40%);
+  backdrop-filter: blur(2.5px);
+  z-index: -1;
+}
+
+.toggleCheckOut {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  min-width: inherit;
+}
+
+.project-btn {
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: 2px solid var(--primary-hover-txt);
+  color: var(--primary-hover-txt);
+  font-size: 14px;
+  font-weight: 700;
+  background: none;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  background-color: var(--primary-hover-txt);
+  color: var(--primary-bg-clr);
+}
+
+.card-detail {
+  padding: 5px 18px;
+  margin-top: 20px;
+}
+
+.card--title {
+  font-size: 1.8rem;
+}
+
+.description {
+  color: var(--secondary-text-clr);
+  font-weight: 300;
+}
+
+/* Cover image for project card */
+.library-cover {
+  background-image: url(./assets/project-card/library.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contact section */
+
+.contact-main {
+  background-color: var(--primary-text-clr);
+  color: var(--primary-bg-clr);
+  margin-top: 80px;
+  padding: 30px 80px;
+}
+
+.contact--title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact--form {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.personal-detail {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  margin-top: 15px;
+}
+
+.personal-detail > input {
+  max-width: 400px;
+  padding: 6px 9px;
+  background: none;
+  border: 1px solid var(--secondary-text-clr);
+  color: var(--primary-bg-clr);
+  font-size: 0.9rem;
+  outline: none;
+  border-radius: 6px;
+}
+
+.personal-detail > input:focus {
+  background: var(--secondary-text-clr);
+  color: var(--primary-text-clr);
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment > textarea {
+  width: 600px;
+  height: 100px;
+  resize: none;
+  font-family: inherit;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 20px;
+  outline: none;
+  background-color: var(--secondary-text-clr);
+}
+
+.comment > button {
+  width: 100px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: green;
+  border: none;
+  border-radius: 20px;
+  color: var(--primary-bg-clr);
+  cursor: pointer;
+}
+
+.comment > button:hover {
+  transform: scale(1.05);
 }

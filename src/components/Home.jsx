@@ -9,12 +9,17 @@ const Home = () => {
           Hi. I'm <span className="highlight-text">Rojan Rai.</span>
         </h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
-          accusamus labore ut libero quam nemo.
+          I'm a front-end web developer who is
+          <span className="highlight-text"> passionate </span>about producing
+          interactive and engaging digital experiences. I
+          <span className="highlight-text"> work hard </span> to make ideas come
+          to life and provide seamless user experiences thanks to my sharp eye
+          for <span className="highlight-text"> design and passion </span> for
+          coding.
         </p>
-        <button className="hire-btn">
+        <a href="mailto:rairojan1116@gmail.com" className="hire-btn">
           <span>Hire me!</span>
-        </button>
+        </a>
       </div>
     </div>
   );

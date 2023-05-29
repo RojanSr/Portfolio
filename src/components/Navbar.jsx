@@ -18,10 +18,10 @@ export default function Navbar(props) {
           <a href="#skills-section">Skills</a>
         </li>
         <li className="nav--item">
-          <a href="#">Projects</a>{" "}
+          <a href="#project-section">Projects</a>{" "}
         </li>
         <li className="nav--item">
-          <a href="#">Contact</a>
+          <a href="#contact-section">Contact</a>
         </li>
       </ul>
     </nav>
