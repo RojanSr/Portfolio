@@ -114,8 +114,8 @@ nav {
 } */
 
 .dev-illustration {
-  width: 500px;
-  height: 400px;
+  width: 50%;
+  height: 350px;
   background-image: url(./assets/stars.svg);
   background-position: center;
   background-size: contain;
@@ -149,6 +149,7 @@ nav {
 .intro-div {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   height: 100vh;
 }
 
@@ -416,7 +417,7 @@ nav {
 }
 
 .personal-detail > input {
-  max-width: 400px;
+  max-width: 300px;
   padding: 6px 9px;
   background: none;
   border: 1px solid var(--secondary-text-clr);
@@ -437,7 +438,7 @@ nav {
 }
 
 .comment > textarea {
-  width: 600px;
+  /* max-width: 600px; */
   height: 100px;
   resize: none;
   font-family: inherit;
@@ -461,4 +462,113 @@ nav {
 
 .comment > button:hover {
   transform: scale(1.05);
+}
+
+/* Responsiveness */
+
+@media (max-width: 800px) {
+  /* Contact Form */
+  .contact-main {
+    padding: 20px 40px;
+  }
+  .contact--title {
+    font-size: 1.5rem;
+  }
+  .contact--form {
+    flex-direction: column;
+    font-size: 1.1rem;
+  }
+  .comment > textarea {
+    font-size: 14px;
+  }
+
+  /* Main */
+  .intro-div {
+    height: 100%;
+    padding: 80px 0px;
+  }
+}
+
+@media (max-width: 590px) {
+  .dev-illustration {
+    margin-top: 0;
+    width: 360px;
+  }
+
+  .introduction {
+    margin: 0;
+    width: 70vw;
+  }
+}
+
+.hamburger-div {
+  color: inherit;
+  position: absolute;
+  right: 30px;
+  top: 82px;
+  font-size: 1.5rem;
+  width: 200px;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--primary-bg-clr);
+  backdrop-filter: blur(3px);
+}
+
+.hamburger-div > ul {
+  list-style: none;
+}
+
+.toggleHamburger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-text-clr);
+  color: var(--primary-bg-clr);
+  cursor: pointer;
+  border: 1px solid var(--primary-text-clr);
+  transition: 0.2s ease-in;
+}
+
+.toggleHamburger:hover {
+  background-color: var(--primary-bg-clr);
+  color: var(--primary-text-clr);
+}
+
+.fa-xmark {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  nav {
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 630px) {
+  .toggleHamburger {
+    display: flex;
+  }
+
+  nav {
+    padding: 0 40px;
+  }
+  .nav--item {
+    display: none;
+  }
+}
+
+.hamnav--item:hover {
+  color: var(--primary-hover-txt);
+  font-weight: 500;
+}
+
+@media (min-width: 630px) {
+  .hamburger-div {
+    display: none;
+  }
 }
