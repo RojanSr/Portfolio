@@ -2,7 +2,7 @@
 
 :root {
   --primary-bg-clr: #ffffff;
-  --primary-text-clr: #1c1b1be4;
+  --primary-text-clr: #1c1b1bf8;
 
   --secondary-text-clr: #d4d0d0;
 
@@ -123,7 +123,7 @@ nav {
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(-10deg);
-  animation: 1s svg;
+  animation: 1s svg, 4s rotate infinite 1s;
   margin-top: 100px;
   position: relative;
 }
@@ -138,9 +138,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  transform: rotate(300deg);
   animation: 4s astronaut infinite;
-  transform: rotate(180deg);
 }
 
 /* page load animation */
@@ -152,6 +150,18 @@ nav {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(-11deg);
+  }
+  100% {
+    transform: rotate(-10deg);
   }
 }
 
@@ -193,7 +203,17 @@ nav {
 
 .introduction > p {
   margin-bottom: 20px;
+  /* animation: typing 10s steps(30, start) forwards; */
 }
+/* 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} */
 
 .highlight-text {
   color: var(--primary-hover-txt);
@@ -335,8 +355,7 @@ nav {
   max-width: 300px;
   min-height: 320px;
   position: relative;
-  border-radius: 30px;
-  border: none;
+  border-radius: 20px;
   outline: none;
   cursor: pointer;
   z-index: 0;
@@ -348,6 +367,7 @@ nav {
   position: absolute;
   inset: 0;
   width: 100%;
+  transform: scale(1.003);
   height: 100%;
   border-radius: inherit;
   filter: brightness(90%);
@@ -425,12 +445,29 @@ nav {
   background-size: cover;
 }
 
-/* Contact section */
+/* Footer section */
 
-.contact-main {
+footer {
   background-color: var(--primary-text-clr);
   color: var(--primary-bg-clr);
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin: 0px 10px;
+}
+
+.social-icon:hover {
+  color: var(--primary-hover-txt);
+}
+
+.contact-main {
+  width: 100%;
   padding: 30px 80px;
 }
 
@@ -637,5 +674,11 @@ nav {
 
   .astronaut-illustration {
     bottom: 30px;
+  }
+}
+
+@media (max-width: 310px) {
+  .project-btn {
+    padding: 8px 10px;
   }
 }

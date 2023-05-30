@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [dark, setDark] = React.useState(false);
@@ -19,7 +19,7 @@ function App() {
         <Home />
         <Skills />
         <Project />
-        <Contact />
+        <Footer />
       </main>
     </div>
   );
