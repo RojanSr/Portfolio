@@ -4,7 +4,9 @@ import ProjectCard from "./ProjectCard";
 const Project = () => {
   return (
     <div className="project-main" id="project-section">
-      <h2 className="project--title">My Projects</h2>
+      <h2 className="project--title">
+        My <span className="highlight-text"> Projects </span>
+      </h2>
       <div className="project--container">
         <ProjectCard
           title="Odin Library"

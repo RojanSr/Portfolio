@@ -9,7 +9,9 @@ const Contact = () => {
 
   return (
     <div className="contact-main" id="contact-section">
-      <h2 className="contact--title">Contact me</h2>
+      <h2 className="contact--title">
+        Contact <span className="highlight-text">me</span>
+      </h2>
       <form className="contact--form">
         <div className="personal-detail">
           <label htmlFor="">Username</label>

@@ -3,7 +3,9 @@ import React from "react";
 const Home = () => {
   return (
     <div className="intro-div" id="home-section">
-      <div className="dev-illustration"></div>
+      <div className="dev-illustration">
+        <div className="astronaut-illustration"></div>
+      </div>
       <div className="introduction">
         <h1>
           Hi. I'm <span className="highlight-text">Rojan Rai.</span>
