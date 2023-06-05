@@ -3,6 +3,7 @@ import React from "react";
 const ProjectCard = (props) => {
   return (
     <div className={`project-card ${props.imageClass}`}>
+      <div className="filter"></div>
       <div className="card-detail">
         <h3 className="card--title">{props.title}</h3>
         <p className="description">{props.description}</p>
