@@ -1,8 +1,14 @@
 import React from "react";
 
 const ProjectCard = (props) => {
+  const cardStyles = {
+    background: `url(${props.imgUrl})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  };
   return (
-    <div className={`project-card ${props.imageClass}`}>
+    <div className="project-card" style={cardStyles}>
       <div className="filter"></div>
       <div className="card-detail">
         <h3 className="card--title">{props.title}</h3>
