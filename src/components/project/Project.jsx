@@ -16,8 +16,6 @@ const Project = () => {
     );
   });
 
-  console.log(projectData[0].id);
-
   return (
     <div className="project-main" id="project-section">
       <h2 className="project--title">
