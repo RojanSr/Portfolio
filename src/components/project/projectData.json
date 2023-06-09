@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Odin Library",
-    "imgUrl": "./src/assets/project-card/library.jpg",
+    "imgUrl": "../../assets/project-card/library.jpg",
     "githubLink": "https://github.com/RojanSr/Odin-library",
     "liveLink": "https://rojansr.github.io/Odin-library/",
     "description":
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "Weather App",
-    "imgUrl": "./src/assets/project-card/weather.png",
+    "imgUrl": "../../assets/project-card/weather.png",
     "githubLink": "https://github.com/RojanSr/React-weather-app",
     "liveLink": "https://rojansr.github.io/React-weather-app/",
     "description": "Check out weather from all around the world."
@@ -21,7 +21,7 @@
   {
     "id": 3,
     "title": "Meme Generator",
-    "imgUrl": "./src/assets/project-card/meme.png",
+    "imgUrl": "../../assets/project-card/meme.png",
     "githubLink": "https://github.com/RojanSr/Meme-generator",
     "liveLink": "https://sprightly-sherbet-934649.netlify.app/",
     "description":
@@ -31,7 +31,7 @@
   {
     "id": 4,
     "title": "Interactive rating",
-    "imgUrl": "./src/assets/project-card/rating.png",
+    "imgUrl": "../../assets/project-card/rating.png",
     "githubLink": "https://github.com/RojanSr/interactive-rating-component-main",
     "liveLink": "https://rojansr.github.io/interactive-rating-component-main/",
     "description":
