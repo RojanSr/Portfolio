@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Navbar(props) {
-  // const hamDiv = document.getElementById("hamburger-menu");
-
   const [hamDiv, setHamDiv] = React.useState(false);
 
   const hamStyle = hamDiv

@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCard = (props) => {
   const cardStyles = {
-    background: `url(${props.imgUrl})`,
+    backgroundImage: `url(${props.imgUrl})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",

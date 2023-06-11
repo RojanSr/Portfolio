@@ -9,13 +9,13 @@ const Contact = () => {
         </h2>
         <form className="contact--form">
           <div className="personal-detail">
-            <label htmlFor="">Username</label>
+            <label>Username</label>
             <input type="text" />
-            <label htmlFor="">Email</label>
+            <label>Email</label>
             <input type="email" />
           </div>
           <div className="comment">
-            <label htmlFor="">Comment</label>
+            <label>Comment</label>
             <textarea
               name=""
               id=""
