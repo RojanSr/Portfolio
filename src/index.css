@@ -331,6 +331,12 @@ nav {
   background-size: 80%;
   background-repeat: no-repeat;
 }
+.chakraui {
+  background-image: url(./assets/skills/chakraui.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
 
 .project-main {
   padding-top: 10vh;
