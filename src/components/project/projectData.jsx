@@ -28,8 +28,8 @@ const projectData = [
   {
     id: 4,
     title: "Interactive rating",
-    githubLink: "https://github.com/RojanSr/interactive-rating-component-main",
-    liveLink: "https://rojansr.github.io/interactive-rating-component-main/",
+    githubLink: "https://github.com/RojanSr/Interactive-Rating-component-with-Vanilla-JS",
+    liveLink: "https://rojansr.github.io/Interactive-Rating-component-with-Vanilla-JS/",
     description:
       "A user rating website which records the rating provided in local storage for further use.",
   },
