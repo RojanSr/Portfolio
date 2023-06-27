@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
@@ -7,21 +8,17 @@ const Home = () => {
         <div className="astronaut-illustration"></div>
       </div>
       <div className="introduction">
-        <h1>
-          Hi. I'm <span className="highlight-text">Rojan Rai.</span>
-        </h1>
-        <p>
-          I'm a front-end web developer who is
-          <span className="highlight-text"> passionate </span>about producing
-          interactive and engaging digital experiences. I
-          <span className="highlight-text"> work hard </span> to make ideas come
-          to life and provide seamless user experiences thanks to my sharp eye
-          for <span className="highlight-text"> design and passion </span> for
-          coding.
-        </p>
-        <a href="mailto:rairojan1116@gmail.com" className="hire-btn">
-          <span>Hire me!</span>
-        </a>
+        <h2 style={{ fontSize: "2rem", marginBottom: "12px" }}>
+          Hi there 👋! I'm <span className="highlight-text">Rojan Rai.</span>
+        </h2>
+        <TypeAnimation
+          sequence={[
+            "A front-end web developer who is passionate about producing interactive and engaging digital experiences. I work hard to make ideas come to life and provide seamless user experiences thanks to my sharp eye for design and passion  for coding.",
+          ]}
+          wrapper="p"
+          speed={50}
+          style={{ fontSize: "18px", display: "inline-block" }}
+        />
       </div>
     </div>
   );

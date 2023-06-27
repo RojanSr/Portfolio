@@ -201,20 +201,6 @@ nav {
   margin-top: 200px;
 }
 
-.introduction > p {
-  margin-bottom: 20px;
-  /* animation: typing 10s steps(30, start) forwards; */
-}
-/* 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-} */
-
 .highlight-text {
   color: var(--primary-hover-txt);
 }
@@ -228,6 +214,7 @@ nav {
   transition: 0.08s ease-in;
   border-radius: 5px;
   cursor: pointer;
+  position: fixed;
 }
 
 .hire-btn > span {
