@@ -117,14 +117,14 @@ nav {
 
 .dev-illustration {
   width: 50%;
-  height: 350px;
+  height: 400px;
   background-image: url(./assets/stars.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(-10deg);
   animation: 1s svg, 4s rotate infinite 1s;
-  margin-top: 100px;
+  margin-top: 200px;
   position: relative;
 }
 
@@ -198,7 +198,7 @@ nav {
 .introduction {
   width: 40vw;
   animation: 1.5s introduction;
-  margin-top: 200px;
+  margin-top: 250px;
 }
 
 .highlight-text {
@@ -206,19 +206,22 @@ nav {
 }
 
 .hire-btn {
+  display: block;
   border: 2px solid var(--primary-hover-txt);
   color: var(--primary-hover-txt);
-  padding: 2px 20px;
+  padding: 6px 10px;
+  margin-top: 12px;
   position: relative;
   z-index: 1;
-  transition: 0.08s ease-in;
   border-radius: 5px;
   cursor: pointer;
-  position: fixed;
+  max-width: 120px;
+  text-align: center;
+  opacity: 0;
 }
 
 .hire-btn > span {
-  font-size: 14px;
+  font-size: 18px;
   z-index: 10;
 }
 
