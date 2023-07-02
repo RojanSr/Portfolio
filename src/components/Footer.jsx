@@ -43,7 +43,7 @@ const Contact = () => {
           <i className="fa-brands fa-facebook"></i>
         </a>
         <a
-          href="https://www.linkedin.com/in/rojan-rai-460879268/"
+          href="https://www.linkedin.com/in/rojan-rai-665934277/"
           target="_blank"
           className="social-icon"
         >
